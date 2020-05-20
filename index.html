@@ -19,7 +19,7 @@
             margin: 0;
         }
         </style>
-        <title>Township Economy Development Strategy : Virtual Map </title>
+        <title>Township Economy Development Strategy : Vitrual Map </title>
     </head>
     <body>
         <div id="map">
@@ -389,11 +389,8 @@
                 return this._div;
             };
             title.update = function () {
-                this._div.innerHTML = '<h2>Township Economy Development Strategy : Virtual Map </h2>';
-                <p id="shortdesc"> 
-                    Created by UrbanWorks&Architecture on May 2020, Version 1.0
-                </p>
-            }
+                this._div.innerHTML = '<h2>Township Economy Development Strategy : Vitrual Map </h2>';
+            };
             title.addTo(map);
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="legend/zonesdtude_5.png" /> zones d\'étude': cluster_zonesdtude_5,'<img src="legend/Pinetown_4.png" /> Pinetown': layer_Pinetown_4,'<img src="legend/eThekwini_Regions_3.png" /> eThekwini_Regions': layer_eThekwini_Regions_3,'<img src="legend/Rgionsdtude_2.png" /> Régions d\'étude': layer_Rgionsdtude_2,'<img src="legend/ZAF_adm1_1.png" /> ZAF_adm1': layer_ZAF_adm1_1,"Satellite": layer_Satellite_0,},{collapsed:false}).addTo(map);
