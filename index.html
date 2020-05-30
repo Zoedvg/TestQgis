@@ -381,15 +381,16 @@
             title.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info');
                 this.update();
+                this.update2();
                 return this._div;
             };
             title.update = function () {
                 this._div.innerHTML = '<h2>Township Economy Development Strategy : Virtual Map </h2>';
             };
-            /*title.update2 = function () {
+            title.update2 = function () {
                 this._div.innerHTML = '<h3>Created by UrbanWorks&Architecture v1.3</h3>';
             };
-            title.addTo(map);*/
+            title.addTo(map);
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="legend/StudyArea_6.png" /> Study Area': layer_StudyArea_6,'<img src="legend/ZoomtoStudyArea_5.png" /> Zoom to Study Area ': cluster_ZoomtoStudyArea_5,'<img src="legend/Metro_4.png" /> Metro': layer_Metro_4,'<img src="legend/Province_3.png" /> Province': layer_Province_3,"Hybrid": layer_Hybrid_2,"Satellite": layer_Satellite_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
         setBounds();
