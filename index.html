@@ -42,7 +42,7 @@
         function highlightFeature(e) {
             highlightLayer = e.target;
 
-            if (e.target.feature.geometry.type === 'LineString' &&  cluster_ZoomtoStudyArea_5) {
+            if (e.target.feature.geometry.type === 'LineString') {
               highlightLayer.setStyle({
                 color: '#ffff00',
               });
